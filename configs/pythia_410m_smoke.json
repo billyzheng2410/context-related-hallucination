@@ -1,0 +1,21 @@
+{
+  "env": "source hallucination_env/bin/activate",
+  "model_name": "EleutherAI/pythia-410m",
+  "dataset_source": "better dataset/data.json",
+  "normalized_dataset": "data/processed/better_counterfactual.jsonl",
+  "summary": "data/processed/better_counterfactual_summary.json",
+  "baseline_results": "results/baselines/pythia_410m_margin_results.jsonl",
+  "baseline_summary": "results/baselines/pythia_410m_margin_summary.json",
+  "recommended_smoke_commands": [
+    "hallucination_env/bin/python scripts/prepare_better_dataset.py",
+    "hallucination_env/bin/python scripts/prepare_better_dataset.py --model-name EleutherAI/pythia-410m --local-files-only --filter-single-token-answers",
+    "hallucination_env/bin/python scripts/run_margin_baseline.py --local-files-only --offline --limit 50",
+    "hallucination_env/bin/python scripts/run_gumbel_head_search.py --local-files-only --offline --limit 24 --eval-limit 24 --epochs 30 --batch-size 4 --eval-batch-size 8 --top-k-heads 10 --dtype float32"
+  ],
+  "notes": [
+    "The first command normalizes all rows without tokenizer filtering.",
+    "The second command keeps only rows where gold and distractor answers are single tokens for Pythia-410M.",
+    "The third command is a cheap next-token margin smoke test before running Gumbel head search.",
+    "The fourth command runs a small Gumbel head-search experiment with a random-head ablation baseline."
+  ]
+}

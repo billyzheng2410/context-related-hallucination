@@ -1,0 +1,37 @@
+{
+  "total_rows": 30,
+  "ok_rows": 30,
+  "status_counts": {
+    "ok": 30
+  },
+  "clean_margin_mean": 3.9486979166666667,
+  "clean_margin_positive_rate": 0.9333333333333333,
+  "attacked_margin_mean": 3.08203125,
+  "attacked_margin_positive_rate": 0.8666666666666667,
+  "attacked_minus_clean_margin_mean": -0.8666666666666667,
+  "by_relation": {
+    "taxonomy": {
+      "n": 30,
+      "clean_margin_mean": 3.9486979166666667,
+      "attacked_margin_mean": 3.08203125,
+      "attacked_minus_clean_margin_mean": -0.8666666666666667,
+      "clean_margin_positive_rate": 0.9333333333333333,
+      "attacked_margin_positive_rate": 0.8666666666666667
+    }
+  },
+  "by_relation_domain": {
+    "taxonomy::natural": {
+      "n": 30,
+      "clean_margin_mean": 3.9486979166666667,
+      "attacked_margin_mean": 3.08203125,
+      "attacked_minus_clean_margin_mean": -0.8666666666666667,
+      "clean_margin_positive_rate": 0.9333333333333333,
+      "attacked_margin_positive_rate": 0.8666666666666667
+    }
+  },
+  "model_name": "EleutherAI/pythia-410m",
+  "dataset": "data/processed/better_counterfactual.jsonl",
+  "limit": 30,
+  "relation_filter": null,
+  "domain_filter": null
+}

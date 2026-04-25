@@ -1,0 +1,160 @@
+{
+  "relations": {
+    "taxonomy": {
+      "natural": 162,
+      "artifact": 144,
+      "abstract": 108
+    },
+    "partwhole": {
+      "biological": 144,
+      "mechanical": 144,
+      "collection": 144,
+      "portion": 132
+    },
+    "synonym": {
+      "verbs": 60,
+      "nouns": 60,
+      "adjectives": 30
+    },
+    "antonym": {
+      "adjectives": 75,
+      "verbs": 60,
+      "nouns": 45
+    },
+    "causation": {
+      "physical": 60,
+      "emotional": 30,
+      "social": 45
+    },
+    "spatial": {
+      "location": 65,
+      "containment": 45,
+      "direction": 45
+    }
+  },
+  "skipped": {
+    "multi_token_answer": 97
+  },
+  "total_rows": 1598,
+  "unique_relations": 6,
+  "domains_per_relation": {
+    "taxonomy": [
+      "abstract",
+      "artifact",
+      "natural"
+    ],
+    "partwhole": [
+      "biological",
+      "collection",
+      "mechanical",
+      "portion"
+    ],
+    "synonym": [
+      "adjectives",
+      "nouns",
+      "verbs"
+    ],
+    "antonym": [
+      "adjectives",
+      "nouns",
+      "verbs"
+    ],
+    "causation": [
+      "emotional",
+      "physical",
+      "social"
+    ],
+    "spatial": [
+      "containment",
+      "direction",
+      "location"
+    ]
+  },
+  "rows_by_relation": {
+    "taxonomy": 414,
+    "partwhole": 564,
+    "synonym": 150,
+    "antonym": 180,
+    "causation": 135,
+    "spatial": 155
+  },
+  "rows_by_relation_domain": {
+    "taxonomy": {
+      "natural": 162,
+      "artifact": 144,
+      "abstract": 108
+    },
+    "partwhole": {
+      "biological": 144,
+      "mechanical": 144,
+      "collection": 144,
+      "portion": 132
+    },
+    "synonym": {
+      "verbs": 60,
+      "nouns": 60,
+      "adjectives": 30
+    },
+    "antonym": {
+      "adjectives": 75,
+      "verbs": 60,
+      "nouns": 45
+    },
+    "causation": {
+      "physical": 60,
+      "emotional": 30,
+      "social": 45
+    },
+    "spatial": {
+      "location": 65,
+      "containment": 45,
+      "direction": 45
+    }
+  },
+  "rows_by_relation_template": {
+    "taxonomy": {
+      "0": 69,
+      "1": 69,
+      "2": 69,
+      "3": 69,
+      "4": 69,
+      "5": 69
+    },
+    "partwhole": {
+      "0": 94,
+      "1": 94,
+      "2": 94,
+      "3": 94,
+      "4": 94,
+      "5": 94
+    },
+    "synonym": {
+      "0": 30,
+      "1": 30,
+      "2": 30,
+      "3": 30,
+      "4": 30
+    },
+    "antonym": {
+      "0": 36,
+      "1": 36,
+      "2": 36,
+      "3": 36,
+      "4": 36
+    },
+    "causation": {
+      "0": 27,
+      "1": 27,
+      "2": 27,
+      "3": 27,
+      "4": 27
+    },
+    "spatial": {
+      "0": 31,
+      "1": 31,
+      "2": 31,
+      "3": 31,
+      "4": 31
+    }
+  }
+}
